@@ -8,6 +8,8 @@ st.title("한수현의 간단한 공학계산기")
 expression = st.text_input("수식을 작성하세요. (ex. sin(pi/6) +  pi)")
 
 expression = expression.replace('e', 'E')
+expression = re.sub(r'ln(\d+)', r'ln(\1)', expression)
+expression = re.sub(r'(\s*)ln(\d+)(\s*\+)', r'\1ln(\2)\3', expression)
 
 x, y, z = sp.symbols('x y z')
 
