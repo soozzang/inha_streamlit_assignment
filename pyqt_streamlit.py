@@ -1,8 +1,6 @@
 # pyqt_streamlit.py
 
 import sys
-from PyQt5.QtWidgets import QApplication, QMainWindow, QVBoxLayout, QWidget
-from PyQt5.QtWebEngineWidgets import QWebEngineView
 import threading
 import os
 
