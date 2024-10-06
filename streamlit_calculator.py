@@ -7,12 +7,12 @@ st.title("한수현의 간단한 공학계산기")
 
 expression = st.text_input("수식을 작성하세요. (ex. sin(pi/6) +  pi)")
 
-expression = expression.replace('e', 'E').evalf()
+expression = expression.replace('e', 'E')
 x, y, z = sp.symbols('x y z')
 
 if st.button("계산"):
     try:
-        result = sp.sympify(expression)
+        result = sp.sympify(expression).evalf()
         st.success(f"결과 값: {result}")
     except Exception as e:
         st.error(f"Error: {e}")
