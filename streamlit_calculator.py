@@ -5,7 +5,7 @@ import sympy as sp
 
 st.title("한수현의 간단한 공학계산기")
 
-expression = st.text_input("수식을 작성하세요. (ex. sin(30) +  pi")
+expression = st.text_input("수식을 작성하세요. (ex. sin(30) +  pi)")
 
 x, y, z = sp.symbols('x y z')
 
