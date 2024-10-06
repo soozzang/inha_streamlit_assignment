@@ -24,4 +24,3 @@ st.sidebar.write("""
 - **지수 연산**: exp
 - **상수들**: pi, e
 """)
-
