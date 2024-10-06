@@ -12,7 +12,7 @@ x, y, z = sp.symbols('x y z')
 
 if st.button("계산"):
     try:
-        result = sp.sympify(expression).evalf()
+        result = sp.sympify(expression)
         st.success(f"결과 값: {result}")
     except Exception as e:
         st.error(f"Error: {e}")
